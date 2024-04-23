@@ -37,17 +37,6 @@
 
 ###
 
-<h2 align="left">My Stats</h2>
-
-###
-
-<div align="center">
-  <img src="https://github-stats-alpha.vercel.app/api?username=AmirezaEb&cc=22272e&tc=37BCF6&ic=AE87FF&bc=AE87FF" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=AmirezaEb&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=1" height="150" alt="languages graph"  />
-</div>
-
-###
-
 <h2 align="left">Links</h2>
 
 ###
