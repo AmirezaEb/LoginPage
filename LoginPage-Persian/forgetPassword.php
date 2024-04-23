@@ -9,8 +9,9 @@ include 'config/init.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://fonts.cdnfonts.com/css/iranian-sans">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Forget Password</title>
+    <title>فراموشی رمزعبور</title>
 </head>
 
 <body>
@@ -39,7 +40,7 @@ include 'config/init.php';
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-right">
-                    <h1>سلام، دوست خوبم</h1>
+                    <h3>سلام دوست خوبم</h3>
                     <p>
                         اگر رمز عبور خود را فراموش کردید، می توانید ایمیل خود را وارد کنید تا رمز عبور جدید برایتان ارسال شود
                     </p>
