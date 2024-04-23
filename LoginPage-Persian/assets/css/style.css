@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Iranian Sans', sans-serif;
 }
 
 body {
@@ -29,7 +30,7 @@ body {
 }
 
 .container p {
-    font-size: .9vw;
+    font-size: .8vw;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
