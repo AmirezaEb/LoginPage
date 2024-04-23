@@ -10,6 +10,7 @@ include 'config/init.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet"href="https://fonts.cdnfonts.com/css/iranian-sans">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>صفحه ورود</title>
 </head>
@@ -19,7 +20,7 @@ include 'config/init.php';
     <!-- Sing Up -->
     <div class="form-container sign-up">
       <form method="POST" action="controller/singUp.php">
-        <h2>ساخت حساب کاربری</h2>
+        <h3>ساخت حساب کاربری</h3>
         <span>لطفا ایمیل خود را وارد کنید</span>
         <input type="text" name="username" placeholder="نام کاربری">
         <input type="email" name="email" placeholder="ایمیل">
@@ -30,7 +31,7 @@ include 'config/init.php';
     <!-- Sing In -->
     <div class="form-container sign-in">
       <form method="POST" action="controller/singIn.php">
-        <h2>ورود به حساب کاربری</h2>
+        <h3>ورود به حساب کاربری</h3>
         <div class="social-icons">
           <a href="<?= Instagram ?>" class="icons"><i class="fa-brands fa-instagram"></i></a>
           <a href="<?= Telegram ?>" class="icons"><i class="fa-brands fa-telegram"></i></a>
@@ -75,12 +76,12 @@ include 'config/init.php';
     <div class="toggle-container">
       <div class="toggle">
         <div class="toggle-panel toggle-left">
-          <h1>خوش آمدید</h1>
+          <h2>خوش آمدید</h2>
           <p>برای استفاده از تمامی امکانات سایت، مشخصات شخصی خود را وارد کنید</p>
           <button class="hidden" id="login">ورود</button>
         </div>
         <div class="toggle-panel toggle-right">
-          <h1>سلام دوست من</h1>
+          <h2>سلام دوست من</h2>
           <p>
               با مشخصات شخصی خود ثبت نام کنید تا از همه ویژگی های سایت استفاده کنید
           </p>
