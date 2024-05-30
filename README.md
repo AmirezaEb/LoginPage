@@ -1,60 +1,34 @@
+<p align="center"><img src="https://HeroExpert.ir/GitHub/Preview.png" width="300"></p>
 
-###
+<p align="center">Login Page</p>
 
-<h1 align="left">Hey 👋</h1>
+## About Login Page
 
-###
+A Functonal , And Simple LoginPage Made By The Following Languages
 
-<p align="left">My Name is Amirreza Ebrahimi and I'm a  Backend  Developer From Iran</p>
+![PHP Badge](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=fff&style=flat)
+![MySQL Badge](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff&style=flat)
+![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=flat)
+![CSS3 Badge](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=flat)
+![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat)
+ 
 
-###
-
-<h2 align="left">About Me</h2>
-
-###
-
-<p align="left">🦅 ENTJ Personality Type<br>🐍 Php, Laravel ...<br>📚 I'm Eager To Learn ...</p>
-
-###
-
-<p align="left"></p>
-
-###
-
-<h2 align="left">I Code With</h2>
-
-###
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" height="40" alt="laravel logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
-</div>
-
-###
-
-<h2 align="left">Links</h2>
-
-###
-<div align="left">
-  <a href="https://instagram.com/amireza._.eb" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
-  </a>
-  <a href="https://telegram.me/a_m_b_r" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/telegram/default.svg" width="52" height="40" alt="telegram logo"  />
-  </a>
-  <a href="aabrahimi1718@gmail.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="52" height="40" alt="gmail logo"  />
-  </a>
-  <a href="aabrahimi1718@gmail.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="gmail logo"  />
-  </a>
-</div>
-
-###
+![Tinre](https://HeroExpert.ir/GitHub/LoginPage/Preview.gif)
 
 
+## Requirements
+* PHP 7.3+
+* Apache
+* MySQL
+  
+
+## Installation
+
+1. Support this repository `star`
+2. Update the `config.php` variables in the `config` folder.
+3. From the `Sql` folder, import the `urls.sql` file into the database to create all the tables.
+
+## 
+
+<a href="https://t.me/HeroExpert_ir">![Telegram Badge](https://img.shields.io/badge/Telegram-26A5E4?logo=telegram&logoColor=fff&style=flat)</a>
+<a href="https://www.linkedin.com/in/amirreza-ebrahimi-9623052a9">![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff&style=flat)</a>
