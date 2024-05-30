@@ -26,7 +26,7 @@ A Functonal , And Simple LoginPage Made By The Following Languages
 
 1. Support this repository `star`
 2. Update the `config.php` variables in the `config` folder.
-3. From the `Sql` folder, import the `urls.sql` file into the database to create all the tables.
+3. From the `Sql` folder, import the `login.sql` file into the database to create all the tables.
 
 ## 
 
