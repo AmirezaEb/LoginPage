@@ -1,5 +1,6 @@
 <?php
 
+# Send New Password Email
 function SendEmail($sendBy, $sendTo, $newPassword)
 {
     $subject = "رمزعبور جدید";
@@ -42,7 +43,7 @@ function SendEmail($sendBy, $sendTo, $newPassword)
     $headers .= "From: <$sendBy>" . "\r\n";
     mail($sendTo, $subject, $message, $headers);
 }
-
+# Generate New Password
 function newPassword($length = 10)
 {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@#-_&!?*';
@@ -54,45 +55,59 @@ function newPassword($length = 10)
     return $randomString;
 }
 
+# Add New User To DataBase
 function addUser($userName, $passWord, $email)
 {
     global $connect;
     $sql = "INSERT INTO users (username,password,email) VALUES (:username,:password,:email);";
     $stmt = $connect->prepare($sql);
-    $stmt->execute([':username' => $userName, ':password' => $passWord, ':email' => $email]);
+    $stmt->bindParam(':username', $userName,PDO::PARAM_STR);
+    $stmt->bindParam(':password', $passWord,PDO::PARAM_STR);
+    $stmt->bindParam(':email', $email,PDO::PARAM_STR);
+    $stmt->execute();
     $result = $stmt->rowCount();
     return $result;
 }
 
+# Recevr User Information
 function receiveUser($key, $passWord)
 {
     global $connect;
     $sql = "SELECT * FROM users WHERE (username = :username OR email = :email) AND (password = :password);";
     $stmt = $connect->prepare($sql);
-    $stmt->execute([':username' => $key, ':email' => $key, ':password' => $passWord]);
+    $stmt->bindParam(':username', $key,PDO::PARAM_STR);
+    $stmt->bindParam(':email', $key,PDO::PARAM_STR);
+    $stmt->bindParam(':password', $passWord,PDO::PARAM_STR);
+    $stmt->execute();
     $result = $stmt->rowCount();
     return $result;
 }
 
+# Search And Find Email User
 function emailUser($email)
 {
     global $connect;
     $sql = "SELECT * FROM users WHERE (email = :email);";
     $stmt = $connect->prepare($sql);
-    $stmt->execute([':email' => $email]);
+    $stmt->bindParam(':email', $email,PDO::PARAM_STR);
+    $stmt->execute();
     $result = $stmt->rowCount();
     return $result;
 }
+
+# Search And Find UserName User
 function userNameUser($Username)
 {
     global $connect;
     $sql = "SELECT * FROM users WHERE (username = :username);";
     $stmt = $connect->prepare($sql);
-    $stmt->execute([':username' => $Username]);
+    $stmt->bindParam(':username', $Username,PDO::PARAM_STR);
+    $stmt->execute();
     $result = $stmt->rowCount();
     return $result;
 }
 
+# Check Password Strength
 function passwordUser($passWord)
 {
     $hero = 0;
@@ -117,12 +132,15 @@ function passwordUser($passWord)
     return 0;
 }
 
+# Add New PassWord User To DataBase
 function resetPassword($email, $NewPassword)
 {
     global $connect;
     $sql = "UPDATE users SET password=:passWord WHERE (email = :email);";
     $stmt = $connect->prepare($sql);
-    $stmt->execute([':email' => $email, ':passWord' => $NewPassword]);
+    $stmt->bindParam(':email', $email,PDO::PARAM_STR);
+    $stmt->bindParam(':passWord', $NewPassword,PDO::PARAM_STR);
+    $stmt->execute();
     $result = $stmt->rowCount();
     return $result;
 }
